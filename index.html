@@ -419,6 +419,24 @@
   .qdoor p{margin-top:8px;color:var(--ink-soft);font-size:16px}
   .qdoor .hero-actions{margin-top:18px}
 
+
+/* round 2 (2026-11-14): guarantee + faq */
+#guarantee .btn{margin-top:26px}
+.guarantee-body{margin-top:20px;max-width:720px}
+.guarantee-body p{color:var(--ink-soft);font-size:17.5px;line-height:1.65}
+.guarantee-body p + p{margin-top:14px}
+.faq-list{margin-top:26px;border-bottom:1px solid var(--line)}
+.faq-item{border-top:1px solid var(--line)}
+.faq-item summary{
+  cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:18px 4px;font-family:"Playfair Display",serif;font-weight:700;font-size:18.5px;color:var(--ink);
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--gold-2);font-size:24px;line-height:1;flex:0 0 auto;font-family:"PT Serif",serif}
+.faq-item[open] summary::after{content:"\2013"}
+.faq-a{padding:0 4px 20px;max-width:760px}
+.faq-a p{color:var(--ink-soft);font-size:16.5px;line-height:1.65}
+
 /* text-fit guard (2026-11-08) */
 html,body{overflow-x:clip}
 .foot-contact a[href^="mailto"]{overflow-wrap:anywhere}
@@ -471,6 +489,84 @@ html,body{overflow-x:clip}
         "closes": "19:00"
       }],
       "parentOrganization": { "@id": "https://sendingsaintscleaning.com/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sendingsaintscleaning.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a Reset cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every home is different, so we don’t publish a price list that guesses at yours. Book or send the Price My Home form, and we confirm your home’s price before your clean — you approve it first, no surprises. The only money up front is an $80 refundable deposit that holds your date, and it applies to your total."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What’s included in a clean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All 49 points of the inspection — kitchen, bathrooms, bedrooms and living areas — with appliances cleaned inside AND out and every room checked twice. There are no add-on charges and no upsells at the door. The full list is on this page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the $80 deposit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It’s a refundable deposit that reserves your spot, and it comes off your total. Plans change — cancel or reschedule with at least 48 hours’ notice and it’s back to you. Inside 48 hours, or a same-day no-show, the deposit is forfeited."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to be home?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most customers are there for the final walkthrough — that’s when we check the work together and you sign off. If you can’t be, talk to us when you book and we’ll arrange it with you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What about my pets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pets are part of the family — they’re welcome in our homes. Homes with pets cost a little more, and we’ll always tell you that up front, before you book."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is a Move-In / Move-Out Reset different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It’s the full deep clean of an empty home — inside cabinets, drawers and closets included — so you can hand over the keys with confidence, or walk into a fresh start. Move-in and move-out cleans are paid in full up front."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if something isn’t right?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That’s what The Reset Guarantee is for. We walk the home with you before we leave and you sign off on the work. If we missed a point on the list, tell us within 48 hours and we come back and finish it — free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which areas do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We’re based in Hickory and serve Conover, Newton, Granite Falls, Lenoir, Morganton and Taylorsville. Not sure if we reach your street? Call or text 980-550-4877 and we’ll let you know."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I book?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Book online in about a minute, hold your date with the $80 refundable deposit, or call or text us at 980-550-4877. We confirm your home’s price before your clean — you approve it first."
+          }
+        }
+      ]
     }
   ]
 }
@@ -526,7 +622,15 @@ html,body{overflow-x:clip}
     <div class="wrap trust-in">
       <a class="review-link" href="https://g.page/r/CS_xaynIYN0SECE/review" target="_blank" rel="noopener">Cleaned with us? <strong>Leave us a Google review 🙏</strong></a>
       <span class="sep" aria-hidden="true">•</span>
-      <p class="small">Locally owned &nbsp;·&nbsp; Mon–Sat, 9 AM–7 PM</p>
+      <p class="small">Insured — covered on every job</p>
+      <span class="sep" aria-hidden="true">•</span>
+      <p class="small">Locally owned — Hickory, NC</p>
+      <span class="sep" aria-hidden="true">•</span>
+      <p class="small">49-point inspection — every clean, signed off</p>
+      <span class="sep" aria-hidden="true">•</span>
+      <p class="small">No contracts — reschedule with 48 hours' notice</p>
+      <span class="sep" aria-hidden="true">•</span>
+      <p class="small">Mon–Sat, 9 AM–7 PM</p>
     </div>
   </div>
 
@@ -675,6 +779,20 @@ html,body{overflow-x:clip}
     </div>
   </section>
 
+  <!-- THE RESET GUARANTEE -->
+  <section class="block" id="guarantee">
+    <div class="wrap">
+      <p class="kicker">Our Promise</p>
+      <h2 class="sec">The Reset Guarantee</h2>
+      <div class="gold-rule"></div>
+      <div class="guarantee-body">
+        <p>Every clean runs the full 49-point inspection. Before we leave, we walk your home with you — room by room, point by point — and you sign off that it’s right. Not after. Not over the phone tomorrow. Before we leave.</p>
+        <p>If we missed a point on the list, tell us within 48 hours and we come back and finish it — free. That’s the guarantee: the list, the walkthrough, your signature.</p>
+      </div>
+      <a class="btn btn-gold" href="https://book.squareup.com/appointments/ba342tp97iayhj/location/L4RASQ36N7Q55" target="_blank" rel="noopener">Book Your Reset</a>
+    </div>
+  </section>
+
   <!-- HOW IT WORKS -->
   <section class="block" id="how">
     <div class="wrap">
@@ -785,13 +903,13 @@ html,body{overflow-x:clip}
           </h3>
           <p style="margin-top:12px;color:var(--ink-soft)">We’re based in Hickory and bring the Reset to homes across the foothills:</p>
           <div class="towns">
-            <span>Hickory</span>
-            <span>Conover</span>
-            <span>Newton</span>
-            <span>Granite Falls</span>
-            <span>Lenoir</span>
-            <span>Morganton</span>
-            <span>Taylorsville</span>
+            <span><a href="/house-cleaning-hickory-nc/" style="text-decoration:none">Hickory</a></span>
+            <span><a href="/house-cleaning-conover-nc/" style="text-decoration:none">Conover</a></span>
+            <span><a href="/house-cleaning-newton-nc/" style="text-decoration:none">Newton</a></span>
+            <span><a href="/house-cleaning-granite-falls-nc/" style="text-decoration:none">Granite Falls</a></span>
+            <span><a href="/house-cleaning-lenoir-nc/" style="text-decoration:none">Lenoir</a></span>
+            <span><a href="/house-cleaning-morganton-nc/" style="text-decoration:none">Morganton</a></span>
+            <span><a href="/house-cleaning-taylorsville-nc/" style="text-decoration:none">Taylorsville</a></span>
           </div>
           <p class="note">Not sure if we reach your street? Call or text <a href="tel:+19805504877" style="color:var(--gold-2)">980-550-4877</a> and we’ll let you know.</p>
         </div>
@@ -900,6 +1018,54 @@ html,body{overflow-x:clip}
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="block" id="faq">
+    <div class="wrap">
+      <p class="kicker">Good Questions</p>
+      <h2 class="sec">Answers, Straight Up</h2>
+      <p class="sec-lede">The things Hickory homeowners ask us before they book — answered the same way we’d answer at your kitchen table.</p>
+      <div class="gold-rule"></div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How much does a Reset cost?</summary>
+          <div class="faq-a"><p>Every home is different, so we don’t publish a price list that guesses at yours. Book or send the Price My Home form, and we confirm your home’s price before your clean — you approve it first, no surprises. The only money up front is an $80 refundable deposit that holds your date, and it applies to your total.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What’s included in a clean?</summary>
+          <div class="faq-a"><p>All 49 points of the inspection — kitchen, bathrooms, bedrooms and living areas — with appliances cleaned inside AND out and every room checked twice. There are no add-on charges and no upsells at the door. The full list is on this page.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What is the $80 deposit?</summary>
+          <div class="faq-a"><p>It’s a refundable deposit that reserves your spot, and it comes off your total. Plans change — cancel or reschedule with at least 48 hours’ notice and it’s back to you. Inside 48 hours, or a same-day no-show, the deposit is forfeited.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need to be home?</summary>
+          <div class="faq-a"><p>Most customers are there for the final walkthrough — that’s when we check the work together and you sign off. If you can’t be, talk to us when you book and we’ll arrange it with you.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What about my pets?</summary>
+          <div class="faq-a"><p>Pets are part of the family — they’re welcome in our homes. Homes with pets cost a little more, and we’ll always tell you that up front, before you book.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>How is a Move-In / Move-Out Reset different?</summary>
+          <div class="faq-a"><p>It’s the full deep clean of an empty home — inside cabinets, drawers and closets included — so you can hand over the keys with confidence, or walk into a fresh start. Move-in and move-out cleans are paid in full up front.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What if something isn’t right?</summary>
+          <div class="faq-a"><p>That’s what The Reset Guarantee is for. We walk the home with you before we leave and you sign off on the work. If we missed a point on the list, tell us within 48 hours and we come back and finish it — free.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Which areas do you serve?</summary>
+          <div class="faq-a"><p>We’re based in Hickory and serve Conover, Newton, Granite Falls, Lenoir, Morganton and Taylorsville. Not sure if we reach your street? Call or text 980-550-4877 and we’ll let you know.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I book?</summary>
+          <div class="faq-a"><p>Book online in about a minute, hold your date with the $80 refundable deposit, or call or text us at 980-550-4877. We confirm your home’s price before your clean — you approve it first.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- FINAL CTA -->
   <div class="final-cta">
     <div class="wrap">
@@ -945,7 +1111,7 @@ html,body{overflow-x:clip}
   <div class="foot-base">
     <div class="wrap">
       <p>© Sending Saints Cleaning Company — We don’t clean, we Reset.</p>
-      <p class="areas">House cleaning in Hickory · Conover · Newton · Granite Falls · Lenoir · Morganton · Taylorsville, North Carolina</p>
+      <p class="areas">House cleaning in <a href="/house-cleaning-hickory-nc/" style="text-decoration:none">Hickory</a> · <a href="/house-cleaning-conover-nc/" style="text-decoration:none">Conover</a> · <a href="/house-cleaning-newton-nc/" style="text-decoration:none">Newton</a> · <a href="/house-cleaning-granite-falls-nc/" style="text-decoration:none">Granite Falls</a> · <a href="/house-cleaning-lenoir-nc/" style="text-decoration:none">Lenoir</a> · <a href="/house-cleaning-morganton-nc/" style="text-decoration:none">Morganton</a> · <a href="/house-cleaning-taylorsville-nc/" style="text-decoration:none">Taylorsville</a>, North Carolina</p>
     </div>
   </div>
 </footer>
